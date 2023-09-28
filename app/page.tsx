@@ -69,6 +69,60 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <section className="apartment">
+          <div className="container">
+            <div className="section--heading">
+              <h2>
+                <span>Apartments in </span>Barcelona, spain
+              </h2>
+              <a href="#">See All (56)</a>
+            </div>
+            <div className="apartment__list-wrapper">
+              <div className="apartment--card">
+                <img src="./img/apartment.png" alt="apartment" />
+                <div className="apartment--meta">
+                  <span>$123</span>
+                  <span>🔥 4.8</span>
+                </div>
+                <div className="apartment__title">
+                  <a href="#">Explore old barcelona from the studio</a>
+                </div>
+              </div>
+              <div className="apartment--card">
+                <img src="./img/apartment.png" alt="apartment" />
+                <div className="apartment--meta">
+                  <span>$123</span>
+                  <span>🔥 4.8</span>
+                </div>
+                <div className="apartment__title">
+                  <a href="#">Explore old barcelona from the studio</a>
+                </div>
+              </div>
+            </div>
+            <div className="apartment__list-wrapper">
+              <div className="apartment--card">
+                <img src="./img/apartment.png" alt="apartment" />
+                <div className="apartment--meta">
+                  <span>$123</span>
+                  <span>🔥 4.8</span>
+                </div>
+                <div className="apartment__title">
+                  <a href="#">Explore old barcelona from the studio</a>
+                </div>
+              </div>
+              <div className="apartment--card">
+                <img src="./img/apartment.png" alt="apartment" />
+                <div className="apartment--meta">
+                  <span>$123</span>
+                  <span>🔥 4.8</span>
+                </div>
+                <div className="apartment__title">
+                  <a href="#">Explore old barcelona from the studio</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );

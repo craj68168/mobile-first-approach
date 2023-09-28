@@ -15,7 +15,7 @@ nav .logo-section {
   gap: 20px;
 }
 
- .search-block {
+.search-block {
   border: 1px solid grey;
   padding: 0.5rem 0.8rem;
   border-radius: 5px;
@@ -58,59 +58,108 @@ nav ul li a {
 .hero {
   background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7)),
     url("/img/mobile-img.png");
-    min-height: calc(100vh - 66px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    display: flex;
-    align-items: center;
+  min-height: calc(100vh - 66px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  /* background-attachment: fixed; */
+  display: flex;
+  align-items: center;
 }
 .hero__text {
-    width: 90%;
-    margin: 0 auto;
-    color:#fff;
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
 }
 .hero__text .hero-emoji {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 .hero__text h1 {
-    font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
-    line-height: 1.2;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 1.2;
 }
 
 .search-block.hero-search-block input {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    color: #fff;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: #fff;
 }
 .search-block.hero-search-block input:focus {
-    outline: none;
+  outline: none;
 }
 .hero ::placeholder {
-    color:#fff
+  color: #fff;
 }
-.search-block.hero-search-block{
-    width: 70%;
+.search-block.hero-search-block {
+  width: 70%;
 }
 .hero--btn-section {
-    margin-top: 2rem;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+  margin-top: 2rem;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .hero--btn-section .btn {
-    color: #fff;
-    padding: 0.7rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
+  color: #000;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .hero--btn-section .btn-success {
-    background-color: rgb(56, 235, 160);
+  background-color: rgb(56, 235, 160);
 }
 .hero--btn-section .btn-secondary {
-    background-color: rgb(227, 220, 220);
+  background-color: rgb(227, 220, 220);
 }
+
+.apartment {
+  background-color: #f6f6f7;
+  padding: 2rem 0;
+}
+.apartment .section--heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.apartment .section--heading h2 {
+    font-weight: 400;
+    color: #000;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.apartment .section--heading span {
+    color: #949FB7;
+    cursor: pointer;
+}
+.apartment .section--heading a {
+    font-size: 1rem;
+}
+.apartment__list-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .apartment--meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .apartment--meta span {
+    padding: 0.4rem 0;
+  }
+  .apartment--card img {
+    width: 100%;
+  }
+  .apartment--card .apartment__title{
+    font-size: 1rem;
+    margin-top: 0.2rem;
+  }
+  .apartment__list-wrapper:last-child{
+    margin-bottom: 0;
+  }
