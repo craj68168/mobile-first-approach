@@ -7,6 +7,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
+  flex-wrap: wrap;
 }
 nav .logo-section {
   display: flex;
@@ -26,5 +27,30 @@ nav input {
   min-width: 190px;
 }
 nav input:focus {
-    outline: none;
+  outline: none;
+}
+nav .hamburger {
+    cursor: pointer;
+}
+nav ul {
+  width: 100%;
+  background-color: whitesmoke;
+  text-align: center;
+  list-style-type: none;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: none;
+}
+nav .show {
+  display: block;
+}
+nav ul li {
+  padding-bottom: 1rem;
+}
+nav ul li:last-child {
+  padding-bottom: 0;
+}
+
+nav ul li a {
+  cursor: pointer;
 }
