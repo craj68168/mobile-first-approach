@@ -48,6 +48,28 @@ export default function Home() {
           </li>
         </ul>
       </nav>
+      <main>
+        <div className="hero">
+          <div className="hero__text">
+            <div className="hero-emoji">🏡</div>
+            <h1>Book unique home and experience the world</h1>
+            <div className="search-block hero-search-block">
+              <input
+                type="text"
+                className="input"
+                placeholder="Please enter the text.."
+              />
+              <img src="./img/search-icon.png" alt="search-icon" />
+            </div>
+            <div className="hero--btn-section">
+              <button className="btn btn-success">All properties</button>
+              <button className="btn btn-secondary">Home</button>
+              <button className="btn btn-secondary">Experience</button>
+              <button className="btn btn-secondary">Restaurant</button>
+            </div>
+          </div>
+        </div>
+      </main>
     </>
   );
 }

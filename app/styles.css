@@ -15,7 +15,7 @@ nav .logo-section {
   gap: 20px;
 }
 
-.logo-section .search-block {
+ .search-block {
   border: 1px solid grey;
   padding: 0.5rem 0.8rem;
   border-radius: 5px;
@@ -30,7 +30,7 @@ nav input:focus {
   outline: none;
 }
 nav .hamburger {
-    cursor: pointer;
+  cursor: pointer;
 }
 nav ul {
   width: 100%;
@@ -53,4 +53,64 @@ nav ul li:last-child {
 
 nav ul li a {
   cursor: pointer;
+}
+
+.hero {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7)),
+    url("/img/mobile-img.png");
+    min-height: calc(100vh - 66px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+}
+.hero__text {
+    width: 90%;
+    margin: 0 auto;
+    color:#fff;
+}
+.hero__text .hero-emoji {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero__text h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.search-block.hero-search-block input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+.search-block.hero-search-block input:focus {
+    outline: none;
+}
+.hero ::placeholder {
+    color:#fff
+}
+.search-block.hero-search-block{
+    width: 70%;
+}
+.hero--btn-section {
+    margin-top: 2rem;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.hero--btn-section .btn {
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero--btn-section .btn-success {
+    background-color: rgb(56, 235, 160);
+}
+.hero--btn-section .btn-secondary {
+    background-color: rgb(227, 220, 220);
 }
