@@ -1,0 +1,30 @@
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+nav .logo-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-section .search-block {
+  border: 1px solid grey;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+nav input {
+  border: none;
+  min-width: 190px;
+}
+nav input:focus {
+    outline: none;
+}
