@@ -68,6 +68,7 @@ export default function Home() {
               <button className="btn btn-secondary">Restaurant</button>
             </div>
           </div>
+          <div className="hero__img__blog"><img src="./img/room.png" alt="image"/></div>
         </div>
         <section className="apartment">
           <div className="container">
@@ -98,8 +99,26 @@ export default function Home() {
                   <a href="#">Explore old barcelona from the studio</a>
                 </div>
               </div>
-            </div>
-            <div className="apartment__list-wrapper">
+              <div className="apartment--card">
+                <img src="./img/apartment.png" alt="apartment" />
+                <div className="apartment--meta">
+                  <span>$123</span>
+                  <span>🔥 4.8</span>
+                </div>
+                <div className="apartment__title">
+                  <a href="#">Explore old barcelona from the studio</a>
+                </div>
+              </div>
+              <div className="apartment--card">
+                <img src="./img/apartment.png" alt="apartment" />
+                <div className="apartment--meta">
+                  <span>$123</span>
+                  <span>🔥 4.8</span>
+                </div>
+                <div className="apartment__title">
+                  <a href="#">Explore old barcelona from the studio</a>
+                </div>
+              </div>
               <div className="apartment--card">
                 <img src="./img/apartment.png" alt="apartment" />
                 <div className="apartment--meta">
@@ -152,8 +171,26 @@ export default function Home() {
                   <a href="#">Explore old barcelona from the studio</a>
                 </div>
               </div>
-            </div>
-            <div className="apartment__list-wrapper">
+              <div className="apartment--card">
+                <img src="./img/apartment.png" alt="apartment" />
+                <div className="apartment--meta">
+                  <span>$123</span>
+                  <span>🔥 4.8</span>
+                </div>
+                <div className="apartment__title">
+                  <a href="#">Explore old barcelona from the studio</a>
+                </div>
+              </div>
+              <div className="apartment--card">
+                <img src="./img/apartment.png" alt="apartment" />
+                <div className="apartment--meta">
+                  <span>$123</span>
+                  <span>🔥 4.8</span>
+                </div>
+                <div className="apartment__title">
+                  <a href="#">Explore old barcelona from the studio</a>
+                </div>
+              </div>
               <div className="apartment--card">
                 <img src="./img/apartment.png" alt="apartment" />
                 <div className="apartment--meta">

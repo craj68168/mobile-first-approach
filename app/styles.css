@@ -108,6 +108,7 @@ nav ul li a {
   padding: 0.7rem 1rem;
   border-radius: 5px;
   cursor: pointer;
+  border: none;
 }
 .hero--btn-section .btn-success {
   background-color: rgb(56, 235, 160);
@@ -163,6 +164,10 @@ nav ul li a {
 .apartment__list-wrapper:last-child {
   margin-bottom: 0;
 }
+
+.hero__img__blog {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   nav .hamburger {
     display: none;
@@ -177,9 +182,44 @@ nav ul li a {
   }
   nav ul li {
     padding: 0;
-    margin-left: 1.5rem;
+    margin-left: 2rem;
   }
   nav {
     flex-wrap: nowrap;
+  }
+  .hero {
+    background: #fff;
+    min-height: auto;
+  }
+  .hero__text {
+    width: 50%;
+    margin-left: 5%;
+  }
+  .hero__img__blog {
+    display: block;
+    width: 50%;
+    margin-left: 2rem;
+  }
+  .hero__img__blog img {
+    height: 100%;
+    width: 100%;
+  }
+  .hero__text h1 {
+    color: #000;
+    width: 100%;
+  }
+  .search-block.hero-search-block input::placeholder {
+    color: #000;
+  }
+  .search-block.hero-search-block input:focus {
+    color: #000;
+  }
+  .apartment__list-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 20px;
   }
 }
