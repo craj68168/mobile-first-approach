@@ -118,7 +118,7 @@ nav ul li a {
 
 .apartment {
   background-color: #f6f6f7;
-  padding: 2rem 0;
+  padding: 2rem 0 1rem 0;
 }
 .apartment .section--heading {
   display: flex;
@@ -127,39 +127,59 @@ nav ul li a {
   margin-bottom: 1rem;
 }
 .apartment .section--heading h2 {
-    font-weight: 400;
-    color: #000;
-    font-size: 1.2rem;
-    cursor: pointer;
+  font-weight: 400;
+  color: #000;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 .apartment .section--heading span {
-    color: #949FB7;
-    cursor: pointer;
+  color: #949fb7;
+  cursor: pointer;
 }
 .apartment .section--heading a {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 .apartment__list-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.apartment--meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.apartment--meta span {
+  padding: 0.4rem 0;
+}
+.apartment--card img {
+  width: 100%;
+}
+.apartment--card .apartment__title {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+.apartment__list-wrapper:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  nav .hamburger {
+    display: none;
   }
-  .apartment--meta {
+  nav ul {
     display: flex;
+    width: auto;
     align-items: center;
-    justify-content: space-between;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
   }
-  .apartment--meta span {
-    padding: 0.4rem 0;
+  nav ul li {
+    padding: 0;
+    margin-left: 1.5rem;
   }
-  .apartment--card img {
-    width: 100%;
+  nav {
+    flex-wrap: nowrap;
   }
-  .apartment--card .apartment__title{
-    font-size: 1rem;
-    margin-top: 0.2rem;
-  }
-  .apartment__list-wrapper:last-child{
-    margin-bottom: 0;
-  }
+}
