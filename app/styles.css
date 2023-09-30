@@ -112,7 +112,12 @@ nav ul li a {
   border-radius: 5px;
   cursor: pointer;
   border: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.8s ease-in-out;
+  background-color: transparent;
 }
+
 .hero--btn-section .btn-success {
   background-color: rgb(56, 235, 160);
 }
@@ -169,9 +174,10 @@ nav ul li a {
 }
 
 .hero__img__blog {
-  display: none;
+  transition: all 0.6s ease-in-out;
+  margin-right: -750px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (width >= 768px) {
   nav .hamburger {
     display: none;
   }
@@ -200,7 +206,7 @@ nav ul li a {
     margin-left: 5%;
   }
   .hero__img__blog {
-    display: block;
+    margin-right: 0;
     width: 50%;
     margin-left: 2rem;
   }
@@ -222,8 +228,8 @@ nav ul li a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (min-width: 1024px) {
-  html {
+@media screen and (min-width >= 1024px) {
+  html, body {
     font-size: 20px;
   }
 }
