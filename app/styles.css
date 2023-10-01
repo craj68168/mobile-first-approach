@@ -108,7 +108,7 @@ nav ul li a {
 }
 .hero--btn-section .btn {
   color: #000;
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 0.7rem;
   border-radius: 5px;
   cursor: pointer;
   border: none;
@@ -177,10 +177,14 @@ nav ul li a {
   transition: all 0.6s ease-in-out;
   margin-right: -750px;
 }
-@media screen and (width >= 768px) {
+
+@media screen and (width >= 770px) {
   nav .hamburger {
     display: none;
   }
+  nav .logo-section .logo { 
+    width: 2.5rem;
+}
   nav ul {
     display: flex;
     width: auto;
@@ -192,7 +196,7 @@ nav ul li a {
   }
   nav ul li {
     padding: 0;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
   }
   nav {
     flex-wrap: nowrap;
@@ -208,7 +212,7 @@ nav ul li a {
   .hero__img__blog {
     margin-right: 0;
     width: 50%;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
   .hero__img__blog img {
     height: 100%;
