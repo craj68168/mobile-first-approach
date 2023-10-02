@@ -3,12 +3,12 @@ import Head from "next/head";
 import "./styles.css";
 import { useState } from "react";
 import {
-  FacebookOutlined,
-  InstagramOutlined,
-  MailOutlined,
-  PhoneOutlined,
-  TwitterOutlined,
-  YoutubeOutlined,
+  FacebookFilled,
+  InstagramFilled,
+  MailFilled,
+  PhoneFilled,
+  TwitterSquareFilled,
+  YoutubeFilled,
 } from "@ant-design/icons";
 
 export default function Home() {
@@ -226,7 +226,7 @@ export default function Home() {
         </section>
         <footer className="footer">
           <div className="footer-wrapper">
-            <div className="footer-container">
+            <div className={`footer-container`}>
               <div className="about-us">
                 <h2>About Us</h2>
                 <p>
@@ -235,37 +235,69 @@ export default function Home() {
                 </p>
                 <ul className="icons">
                   <li>
-                    <FacebookOutlined />
+                    <a href="#">
+                      <FacebookFilled />
+                    </a>
                   </li>
                   <li>
-                    <TwitterOutlined />
+                    <a href="#">
+                      <TwitterSquareFilled />
+                    </a>
                   </li>
                   <li>
-                    <InstagramOutlined />
+                    <a href="#">
+                      <InstagramFilled />
+                    </a>
                   </li>
                   <li>
-                    <YoutubeOutlined />
+                    <a href="#">
+                      <YoutubeFilled />
+                    </a>
                   </li>
                 </ul>
               </div>
               <div className="support">
                 <h2>Support</h2>
-                <p>FAQ</p>
-                <p>Privacy Policy</p>
-                <p>Help</p>
-                <p>Contact</p>
+                <p>
+                  <a href="#">FAQ</a>
+                </p>
+                <p>
+                  <a href="#">Privacy Policy</a>
+                </p>
+                <p>
+                  <a href="#">Help</a>
+                </p>
+                <p>
+                  <a href="#">Contact</a>
+                </p>
               </div>
               <div className="shop">
                 <h2>Shop</h2>
-                <p>Men</p>
-                <p>Women</p>
-                <p>Children</p>
-                <p>Shoes</p>
+                <p>
+                  <a href="#">Men</a>
+                </p>
+                <p>
+                  <a href="#">Women</a>
+                </p>
+                <p>
+                  <a href="#">Children</a>
+                </p>
+                <p>
+                  <a href="#">Shoes</a>
+                </p>
               </div>
               <div className="contact-us">
                 <h2>Contact Us</h2>
-                <p><PhoneOutlined /> 977982345</p>
-                <p> <MailOutlined /> hello@gmail.com</p>
+                <p>
+                  <a href="#">
+                    <PhoneFilled /> 977+982345
+                  </a>
+                </p>
+                <p>
+                  <a href="#">
+                    <MailFilled /> raZz@gmail.com
+                  </a>
+                </p>
               </div>
             </div>
           </div>

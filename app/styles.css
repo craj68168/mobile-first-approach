@@ -178,6 +178,9 @@ nav ul li a {
   margin-right: -750px;
 }
 
+.footer {
+  border-top: 0.4px solid black;
+}
 .footer-wrapper {
   width: 90%;
   margin: 0 auto;
@@ -186,8 +189,7 @@ nav ul li a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding: 20px 0;
-  margin-left: 50px;
+  padding: 4rem 0;
 }
 .about-us {
   font-size: 1rem;
@@ -202,6 +204,7 @@ nav ul li a {
   align-items: center;
   gap: 1rem;
 }
+
 .support {
   font-size: 1rem;
   font-weight: 400;
@@ -292,7 +295,9 @@ nav ul li a {
     grid-template-columns: repeat(3, 1fr);
   }
   .footer-container {
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 350px 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
   }
 }
 @media screen and (min-width >= 1024px) {
