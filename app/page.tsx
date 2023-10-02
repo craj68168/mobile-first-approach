@@ -2,6 +2,14 @@
 import Head from "next/head";
 import "./styles.css";
 import { useState } from "react";
+import {
+  FacebookOutlined,
+  InstagramOutlined,
+  MailOutlined,
+  PhoneOutlined,
+  TwitterOutlined,
+  YoutubeOutlined,
+} from "@ant-design/icons";
 
 export default function Home() {
   const [showClass, setShowClass] = useState(false);
@@ -225,7 +233,20 @@ export default function Home() {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Deserunt nulla adipisci
                 </p>
-                <div className="icons">icons</div>
+                <ul className="icons">
+                  <li>
+                    <FacebookOutlined />
+                  </li>
+                  <li>
+                    <TwitterOutlined />
+                  </li>
+                  <li>
+                    <InstagramOutlined />
+                  </li>
+                  <li>
+                    <YoutubeOutlined />
+                  </li>
+                </ul>
               </div>
               <div className="support">
                 <h2>Support</h2>
@@ -241,14 +262,15 @@ export default function Home() {
                 <p>Children</p>
                 <p>Shoes</p>
               </div>
-              <div className="contant-us">
+              <div className="contact-us">
                 <h2>Contact Us</h2>
-                <p>977982345</p>
-                <p>hello@gmail.com</p>
+                <p><PhoneOutlined /> 977982345</p>
+                <p> <MailOutlined /> hello@gmail.com</p>
               </div>
             </div>
           </div>
         </footer>
+        <div className="copy-right">Copyright © 2023. All Rights Reserved</div>
       </main>
     </>
   );
