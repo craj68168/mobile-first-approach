@@ -68,7 +68,9 @@ export default function Home() {
               <button className="btn btn-secondary">Restaurant</button>
             </div>
           </div>
-          <div className="hero__img__blog"><img src="./img/room.png" alt="image"/></div>
+          <div className="hero__img__blog">
+            <img src="./img/room.png" alt="image" />
+          </div>
         </div>
         <section className="apartment">
           <div className="container">
@@ -214,6 +216,39 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <footer className="footer">
+          <div className="footer-wrapper">
+            <div className="footer-container">
+              <div className="about-us">
+                <h2>About Us</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt nulla adipisci
+                </p>
+                <div className="icons">icons</div>
+              </div>
+              <div className="support">
+                <h2>Support</h2>
+                <p>FAQ</p>
+                <p>Privacy Policy</p>
+                <p>Help</p>
+                <p>Contact</p>
+              </div>
+              <div className="shop">
+                <h2>Shop</h2>
+                <p>Men</p>
+                <p>Women</p>
+                <p>Children</p>
+                <p>Shoes</p>
+              </div>
+              <div className="contant-us">
+                <h2>Contact Us</h2>
+                <p>977982345</p>
+                <p>hello@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </main>
     </>
   );

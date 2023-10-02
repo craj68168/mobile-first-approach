@@ -41,7 +41,7 @@ nav ul {
   padding: 1rem;
   margin-top: 1rem;
   margin-top: -900px;
-  transition: all 0.8s ease;
+  transition: all 0.8s cubic-bezier(0.25, 0.1, 0.51, 1.4);
   border-bottom-right-radius: 30%;
 }
 nav .show {
@@ -178,13 +178,24 @@ nav ul li a {
   margin-right: -750px;
 }
 
+.footer-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px 0;
+}
+
 @media screen and (width >= 770px) {
   nav .hamburger {
     display: none;
   }
-  nav .logo-section .logo { 
+  nav .logo-section .logo {
     width: 2.5rem;
-}
+  }
   nav ul {
     display: flex;
     width: auto;
@@ -231,9 +242,13 @@ nav ul li a {
   .apartment__list-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
+  .footer-container {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
 }
 @media screen and (min-width >= 1024px) {
-  html, body {
+  html,
+  body {
     font-size: 20px;
   }
 }
